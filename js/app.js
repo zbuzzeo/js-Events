@@ -17,6 +17,10 @@ The function will hide the contents in the pargraph with the id of `less` after 
 //3. Tacocat, The Original Palindrome King
 /*Create a function named `zoom` that will increase the font size of the paragraph with the id of `biggie` after hovering your mouse over it. Increae the font size to 150%*/
 
+function zoom(){
+  /*var pElem = document.getElementById("biggie");*/
+  biggie.style.fontSize = "150%";
+}
 
 
 //4. McDonalds
@@ -28,13 +32,6 @@ Next, create a function named valueMenu that will display your favorite items in
 
 //5. Gin.
 /*Create a function named redFace that will change the paragraph text to red and a font size of 20px after clicking on the text.*/
-
-/*function redFace(){
-  var pElement = document.getElementById("drink");
-  pElement.style.color = "red";
-  pElement.style.fontSize = "20px";
-}
-*/
 
 
 
