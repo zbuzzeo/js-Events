@@ -18,13 +18,12 @@ The function will hide the contents in the pargraph with the id of `less` after 
 /*Create a function named `zoom` that will increase the font size of the paragraph with the id of `biggie` after hovering your mouse over it. Increae the font size to 150%*/
 
 function zoom(){
-  /*var pElem = document.getElementById("biggie");*/
-  biggie.style.fontSize = "150%";
+  
 }
 
 
 //4. McDonalds
-/*Create a variable name menu and assign it an array of three of your favorite items at McDonald's.
+/*Create a variable name menuItems and assign it an array of three of your favorite items at McDonald's.
 
 Next, create a function named valueMenu that will display your favorite items in the paragraph the the id of `menu` after clicking on the showMenu paragraph.*/
 
