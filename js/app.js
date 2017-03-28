@@ -13,13 +13,8 @@ var bacon = "Shoulder turducken brisket, kevin swine andouille tri-tip salami ta
 The function will hide the contents in the pargraph with the id of `less` after clicking on the `Show Less` link.*/
 
 
-
 //3. Tacocat, The Original Palindrome King
 /*Create a function named `zoom` that will increase the font size of the paragraph with the id of `biggie` after hovering your mouse over it. Increae the font size to 150%*/
-
-function zoom(){
-  
-}
 
 
 //4. McDonalds
@@ -28,15 +23,12 @@ function zoom(){
 Next, create a function named valueMenu that will display your favorite items in the paragraph the the id of `menu` after clicking on the showMenu paragraph.*/
 
 
-
 //5. Gin.
 /*Create a function named redFace that will change the paragraph text to red and a font size of 20px after clicking on the text.*/
 
 
-
 //6. Peanut Butter Cup Oreos
 /*Create a function `showPrice` that will add the price of `$5.55` inside the paragraph with the id `price` after hovering your mouse over the paragraph.*/
-
 
 
 //7. Mr. Buttons
@@ -45,12 +37,10 @@ Next, create a function named valueMenu that will display your favorite items in
 var myQuote = "Our lives are defined by opportunities; even the ones we miss.";
 
 
-
 //8. Say It again, Randomly
 /*Create a function that will generate a random quote from the variable below after clicking on the button.*/
 
 var quotes = ["It's a funny thing about comin' home. Looks the same, smells the same, feels the same. You'll realize what's changed is you.", "Momma? Momma? Some days, I feel different than the day before.", "Some people, were born to sit by a river. Some get struck by lightning. Some have an ear for music. Some are artists. Some swim. Some know buttons. Some know Shakespeare. Some are mothers. And some people, dance.", "For what it's worth, it's never too late to be whoever you want to be."];
-
 
 
 
