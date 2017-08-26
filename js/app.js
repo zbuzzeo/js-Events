@@ -24,7 +24,7 @@ Next, create a function named valueMenu that will display your favorite items in
 
 
 //5. Gin.
-/*Create a function named redFace that will change the paragraph text to red and a font size of 20px after clicking on the text.*/
+/*Create a function named redFace that will change the paragraph text to red and a font size of 30px after clicking on the text.*/
 
 
 //6. Peanut Butter Cup Oreos
