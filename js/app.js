@@ -45,5 +45,5 @@ var quotes = ["It's a funny thing about comin' home. Looks the same, smells the 
 
 
 //9. Unlock the Secret to Financial Freedom
-/*Create an event listener that will show and hide the message when clickig on the button.
+/*Create an event listener that will show and hide the message when clicking on the button.
 */
