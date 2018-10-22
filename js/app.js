@@ -119,6 +119,18 @@ function redFace() {
 //6. Peanut Butter Cup Oreos
 /*Create a function `showPrice` that will add the price of `$5.55` inside the paragraph with the id `price` after hovering your mouse over the paragraph.*/
 
+var pPrice = document.getElementById('price');
+var priceShowing = false;
+
+function showPrice() {
+      pPrice.innerHTML = '$ 5.55';
+
+}
+
+function removePrice() {
+      pPrice.innerHTML = '';
+
+}
 
 //7. Mr. Buttons
 /*Add an Event Listener to the button that will display `myQuote` inside the paragraph with the id of `displayQuote` after the button is clicked.*/
