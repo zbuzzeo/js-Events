@@ -60,7 +60,15 @@ function lessContent() {
 
 
 //3. Tacocat, The Original Palindrome King
-/*Create a function named `zoom` that will increase the font size of the paragraph with the id of `biggie` after hovering your mouse over it. Increae the font size to 150%*/
+/*Create a function named `zoom` that will increase the font size of the paragraph with the id of `biggie` after hovering your mouse over it. Increase the font size to 150%*/
+
+var pBiggie = document.getElementById('biggie');
+
+function zoom() {
+      /* Just makes my text disappear : (
+      pBiggie.style.fontSize *= 1.50;
+      */
+}
 
 
 //4. McDonalds
