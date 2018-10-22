@@ -64,12 +64,10 @@ function lessContent() {
 
 var pBiggie = document.getElementById('biggie');
 
-function zoom() {
-      /* Just makes my text disappear : (
-      pBiggie.style.fontSize *= 1.50;
-      */
-}
+ function zoom() {
+      pBiggie.style.fontSize = '150%';
 
+}
 
 //4. McDonalds
 /*Create a variable name menuItems and assign it an array of three of your favorite items at McDonald's.
@@ -90,6 +88,33 @@ function valueMenu() {
 //5. Gin.
 /*Create a function named redFace that will change the paragraph text to red and a font size of 30px after clicking on the text.*/
 
+var pGin = document.getElementById('drink');
+var pGinBefore = {
+      color: 'black',
+      fontSize: '20px',
+
+}
+var pGinConfig = {
+      color: 'red',
+      fontSize: '30px',
+
+}
+var colorChangedGin = false;
+
+function redFace() {
+      if (colorChangedGin === false) {
+            colorChangedGin = true;
+            pGin.style.color = pGinConfig.color;
+            pGin.style.fontSize = pGinConfig.fontSize;
+
+      } else if (colorChangedGin === true) {
+            colorChangedGin = false;
+            pGin.style.color = pGinBefore.color;
+            pGin.style.fontSize = pGinBefore.fontSize;
+
+      }
+
+}
 
 //6. Peanut Butter Cup Oreos
 /*Create a function `showPrice` that will add the price of `$5.55` inside the paragraph with the id `price` after hovering your mouse over the paragraph.*/
