@@ -64,9 +64,15 @@ function lessContent() {
 
 var pBiggie = document.getElementById('biggie');
 
+pBiggie.addEventListener('mouseleave', unZoom);
+
  function zoom() {
       pBiggie.style.fontSize = '150%';
 
+}
+
+function unZoom() {
+      pBiggie.style.fontSize = '20px';
 }
 
 //4. McDonalds
@@ -142,18 +148,51 @@ var pQuote = document.getElementById('displayQuote');
 buttonQuote.addEventListener('click', function() {
       if (pQuote.innerHTML === '') {
             pQuote.innerHTML = myQuote;
+
       } else if (pQuote.innerHTML === myQuote) {
             pQuote.innerHTML = '';
+
       }
+
 });
 
 //8. Say It again, Randomly
 /*Create a function that will generate a random quote from the variable below after clicking on the button.*/
 
 var quotes = ["It's a funny thing about comin' home. Looks the same, smells the same, feels the same. You'll realize what's changed is you.", "Momma? Momma? Some days, I feel different than the day before.", "Some people, were born to sit by a river. Some get struck by lightning. Some have an ear for music. Some are artists. Some swim. Some know buttons. Some know Shakespeare. Some are mothers. And some people, dance.", "For what it's worth, it's never too late to be whoever you want to be."];
+var buttonRandom = document.getElementById('random');
+var pQuotes = document.getElementById('displayQuotes');
+
+// My attempt at making sure quotes aren't repeated. Doesn't work.
+function randomQuote() {
+      var lastQuote;
+      var chooseNewQuote =  Math.floor( Math.random() * quotes.length );
+      // alert(`${chooseNewQuote} ${quotes[chooseNewQuote]}`);
+      if (pQuotes.innerHTML !== lastQuote) {
+            pQuotes.innerHTML = quotes[chooseNewQuote];
+            lastQuote = quotes[chooseNewQuote];
+      } else {
 
 
+      }
+
+}
+
+buttonRandom.addEventListener('click', randomQuote );
 
 //9. Unlock the Secret to Financial Freedom
 /*Create an event listener that will show and hide the message when clicking on the button.
 */
+
+var buttonSecret = document.getElementById('showHide');
+var pMoney = document.getElementById('showmoney');
+
+buttonSecret.addEventListener('click', function() {
+      // After looking at the inspector, the display property for showmoney was crossed out. This must be the missing element.
+      if (pMoney.style.display !== 'block') {
+            pMoney.style.display = 'block';
+      } else {
+            pMoney.style.display = 'none';
+      }
+
+})
