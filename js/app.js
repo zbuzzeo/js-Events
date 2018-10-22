@@ -10,12 +10,12 @@ function spacer(exNum) {
 The function will add the following content inside the paragraph with the id of `more`.
 */
 
-let button = document.getElementById('one');
-let pElem = document.getElementById('more');
+var button = document.getElementById('one');
+var pElem = document.getElementById('more');
 
 var bacon = "Shoulder turducken brisket, kevin swine andouille tri-tip salami tail ham sausage pork loin. Ribeye short loin rump kielbasa pork. Capicola short loin turducken corned beef tongue, chuck leberkas salami frankfurter. Kielbasa fatback pancetta, ground round meatball turducken jowl ribeye alcatra sirloin bacon corned beef beef ribs short loin. Pork belly spare ribs biltong corned beef meatball short ribs tongue alcatra swine drumstick. Biltong shankle kevin, cupim sirloin bresaola brisket. Tail pork belly biltong ball tip tri-tip, pig jerky cow pastrami prosciutto ;ground round bacon capicola tongue meatball.";
 
-let contentShowing = false;
+var contentShowing = false;
 
 function moreContent() {
       if (contentShowing === false) {
@@ -37,8 +37,25 @@ function moreContent() {
 
 The function will hide the contents in the pargraph with the id of `less` after clicking on the `Show Less` link.*/
 
+var description = 'VHS wayfarers brooklyn church-key edison bulb, cred helvetica heirloom chillwave lomo ennui. Lomo heirloom fap jianbing, selfies gastropub you probably haven\'t heard of them. Austin godard ugh, portland stumptown kale chips taxidermy four dollar toast gastropub gochujang bicycle rights fanny pack microdosing. Kinfolk tousled 8-bit, keytar portland 3 wolf moon typewriter.';
+
+buttonLess = document.getElementById('noMore');
+pLess = document.getElementById('less');
+contentShowingLess = true;
+
 function lessContent() {
-      
+      if (contentShowingLess === false) {
+            contentShowingLess = true;
+            buttonLess.innerHTML = 'Show Less';
+            pLess.innerHTML = description;
+
+      } else if (contentShowingLess === true) {
+            contentShowingLess = false;
+            buttonLess.innerHTML = 'Show More'
+            pLess.innerHTML = '';
+
+      }
+
 }
 
 
