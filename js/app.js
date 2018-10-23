@@ -87,8 +87,14 @@ function valueMenu() {
       const joinedMenu = menuItems.join(', ');
       console.log(joinedMenu);
 
-      pMenu.innerHTML = joinedMenu;
+      if (pMenu.innerHTML !== joinedMenu) {
+            pMenu.innerHTML = joinedMenu;
 
+      } else if (pMenu.innerHTML === joinedMenu) {
+            pMenu.innerHTML = '';
+
+      }
+            
 }
 
 //5. Gin.
@@ -195,4 +201,4 @@ buttonSecret.addEventListener('click', function() {
             pMoney.style.display = 'none';
       }
 
-})
+});
